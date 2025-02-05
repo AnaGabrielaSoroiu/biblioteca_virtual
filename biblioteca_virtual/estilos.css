@@ -1,3 +1,13 @@
+body {
+    background-color: #f8f8f8;
+}
+
+body p{
+    font-family: 'Crimson Pro', serif;;
+    font-size: 15pt;
+    color: black;
+}
+
 /*Para poner en la misma fila el titulo con el menu de navegacion*/
 header {
     display: flex;
@@ -30,4 +40,42 @@ nav a {
     object-fit: cover;
     width: 20%;
     height: 500px;
+}
+
+/*Para colocar la frase en medio de las imagenes*/
+.frase {
+    font-family: 'Playfair Display', serif;
+
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    /*Para centrarlo bien del todo*/
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 17px;
+    border-radius: 5px;
+    border: 1px solid #e4e2e2;
+}
+
+/*Formato de la cita*/
+blockquote {
+    font-style: italic;
+    color: #6a4c93;
+    padding: 10px;
+    border-left: 4px solid #ff9b9b; 
+    background: #fdf3f3; 
+}
+
+blockquote a {
+    color: #6a4c93;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+}
+
+blockquote a:hover {
+    color: #7700ff;
 }
