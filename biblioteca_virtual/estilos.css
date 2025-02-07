@@ -6,6 +6,8 @@ p{
     font-family: 'Crimson Pro', serif;
     font-size: 15pt;
     color: black;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 /*Para decorar la barra de navegacion*/
@@ -52,8 +54,11 @@ header {
 
 header h1 {
     margin-top: 10px;
-    font-family: 'Lora', serif;
-
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #b02a5c;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -78,10 +83,10 @@ nav a {
 
 /*Para colocar la frase en medio de las imagenes*/
 .frase {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Dancing Script', cursive;
 
     position: absolute;
-    top: 58%;
+    top: 580px;
     left: 50%;
     /*Para centrarlo bien del todo*/
     transform: translate(-50%, -50%);
@@ -97,21 +102,86 @@ nav a {
 /*Formato de la cita*/
 blockquote {
     font-style: italic;
-    color: #6a4c93;
+    color: #181818;
     padding: 10px;
-    border-left: 4px solid #ff9b9b; 
-    background: #fdf3f3; 
+    border-left: 4px solid #000000; 
+    background: #ffffff; 
 }
 
 blockquote a {
-    color: #6a4c93;
+    color: #242424;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
 }
 
 blockquote a:hover {
-    color: #7700ff;
+    color: #861d37;
+}
+
+/*Formato del footer, pie de pagina*/
+footer {
+    margin-top: 60px;
+    background-color: #b02a5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+footer h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffcccb;
+}
+
+.suscripcion {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.suscribirse {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.suscribirse input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.suscribirse button {
+    background-color: white;
+    color: #7B3F61; 
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.suscribirse button:hover {
+    background-color: #7B3F61;
+    color: white;
+}
+
+/*Para quitar los puntitos de la lista*/
+.redes ul {
+    list-style: none;
 }
 
 /*Titulo*/
