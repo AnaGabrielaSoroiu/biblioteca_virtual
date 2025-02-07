@@ -119,6 +119,15 @@ blockquote a:hover {
     color: #861d37;
 }
 
+/*Para el formato del video*/
+video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 /*Formato del footer, pie de pagina*/
 footer {
     margin-top: 60px;
@@ -360,4 +369,15 @@ button.boton_formulario {
 
 button.boton_formulario {
     background-color: #8a2249;
+}
+
+/*Ultimos retoques titulos*/
+.bienvenida {
+    margin-top: 4%;
+    margin-left: 20px;
+}
+
+.top {
+    margin-top: 3%;
+    margin-left: 20px;
 }
