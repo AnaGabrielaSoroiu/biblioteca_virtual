@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Ana Gabriela Soroiu">
-        <title>Cuentos en el Aire</title> 
+        <title>Cuentos en el Aire - Servicios</title> 
         <link rel="icon" href="multimedia/icono.webp" type="image/webp">
         <link rel="stylesheet" href="estilos.css">
 
@@ -30,54 +30,33 @@
         <header>
             <h1>Cuentos en el Aire</h1>
             <nav>
-                <a><span>Inicio</span></a>
+                <a href="index.html"><span>Inicio</span></a>
                 <a href="catalogo.html"><span>Explorar Catálogo</span></a>
-                <a href="servicios.html"><span>Conocer Servicios</span></a>
+                <a><span>Conocer Servicios</span></a>
             </nav>
         </header>
-
-        <div class="img_principales">
-            <img src="multimedia/libroconmovil.webp">
-            <img src="multimedia/chicaleyendo.webp">
-            <img src="multimedia/montonlibros.webp">
-                <p class="frase">Café, libros y paz</p>
-        </div>
-
-        <div class="cuerpo">
-
-        <h2>Bienvenida</h2>
         
-        <!--Etiqueta que se utiliza para las citaciones-->
-        <blockquote>"No hay nada como un libro. Un libro no traiciona, no hiere, no decepciona." - 
-            <a href="https://es.wikipedia.org/wiki/Isabel_Allende" target="_blank">Isabel Allende</a> 
-        </blockquote>
+        <form method="post">
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre..." required pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios">
+            
+            <label for="genero">Género favorito:</label>
+            <select id="genero" name="genero" required>
+                <option value="fantasia">Fantasía</option>
+                <option value="thriller">Thriller</option>
+                <option value="misterio">Misterio</option>
+                <option value="mundo_magico">Mundo mágico</option>
+                <option value="romance">Romance</option>
+                <option value="drama">Drama</option>
+            </select>
 
+            <label for="libro">Libro favorito:</label>
+            <input type="text" id="libro" name="libro" placeholder="Escribe tu libro favorito..." required pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios">
 
-        <p>Bienvenida o bienvenido a Cuentos en el aire. 
-            <br> 
-            Aquí, cada libro es una nueva aventura esperando ser descubierta. Súmergete em nuestras historias, explora nuevos mundos y encuentra la lectura perfecta para ti.</p>
-        
-        </div>
-        
-        <footer>
-            <section class="redes">
-                <h4>Síguenos en nuestras redes</h4>
+            <label for="comentario">Comentarios adicionales:</label>
+            <textarea id="comentario" name="comentario" rows="4" placeholder="Cuéntanos más sobre tus gustos literarios..."></textarea>
 
-                <ul>
-                    <!--Simulacion de las redes sociales de la biblioteca-->
-                    <li><a href="https://www.instagram.com/" target="_blank">@cuentosenelaire</a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank">@cuentosenelaire_</a></li>
-                    <li><a href="https://x.com/" target="_blank">@cuentosenelaire</a></li>
-                </ul>
-            </section>
-
-            <section class="suscripcion">
-                <h4>Suscríbete para recibir novedades</h4>
-                <form class="suscribirse" method="post">
-                    <input type="email" placeholder="Escribe tu correo..." required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-                    <button type="submit">Suscríbete</button>
-                </form>
-            </section>
-        </footer>
+            <button type="submit" class="boton_formulario">Enviar</button>
+        </form>
     </body>
 </html>

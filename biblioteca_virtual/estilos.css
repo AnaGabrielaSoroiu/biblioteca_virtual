@@ -292,3 +292,72 @@ h3 {
     background-color: #8a2249;
 }
 
+/*Decoracion de la parte de los servicios*/
+.servicio {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 20%;
+}
+
+.servicio p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.boton {
+    background-color: #b02a5c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #5C2D4F;
+}
+
+/*Decoracion del formulario*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    color: #b02a5c;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.boton_formulario {
+    background-color: #b02a5c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s;
+}
+
+button.boton_formulario {
+    background-color: #8a2249;
+}
